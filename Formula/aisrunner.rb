@@ -1,5 +1,4 @@
-# Place this file at Formula/aisrunner.rb inside the homebrew-aisrunner repo.
-# The release workflow auto-updates version + sha256 on every tagged release.
+# Auto-updated by ais-runner release workflow.
 # Users install with:
 #   brew tap Bennekrouf/aisrunner
 #   brew install aisrunner
@@ -8,19 +7,12 @@ class Aisrunner < Formula
   desc "AIS Local Runner — desktop runner for Azure-backed AI services"
   homepage "https://github.com/Bennekrouf/ais-runner"
   version "0.1.0"
+  url "https://github.com/Bennekrouf/ais-runner/releases/download/v#{version}/ais-runner-macos-arm64.tar.gz"
+  sha256 "REPLACE_WITH_SHA256"
 
+  depends_on arch: :arm64
   depends_on "node"
   depends_on "azure-cli"
-
-  on_arm do
-    url "https://github.com/Bennekrouf/ais-runner/releases/download/v#{version}/ais-runner-macos-arm64.tar.gz"
-    sha256 "REPLACE_WITH_ARM64_SHA256"
-  end
-
-  on_intel do
-    url "https://github.com/Bennekrouf/ais-runner/releases/download/v#{version}/ais-runner-macos-x86_64.tar.gz"
-    sha256 "REPLACE_WITH_X86_64_SHA256"
-  end
 
   def install
     bin.install "ais-runner"
