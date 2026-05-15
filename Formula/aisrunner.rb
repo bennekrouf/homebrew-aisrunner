@@ -8,7 +8,7 @@ class Aisrunner < Formula
   homepage "https://github.com/Bennekrouf/ais-runner"
   version "0.1.0"
   url "https://github.com/Bennekrouf/ais-runner/releases/download/v#{version}/ais-runner-macos-arm64.tar.gz"
-  sha256 "REPLACE_WITH_SHA256"
+  sha256 "26d36a85628034eb3ba8516ef8c78b8d411b5e05eee0bd2910444bd650e41936"
 
   depends_on arch: :arm64
   depends_on "node"
