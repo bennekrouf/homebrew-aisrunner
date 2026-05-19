@@ -6,9 +6,9 @@
 class Aisrunner < Formula
   desc "AIS Local Runner — desktop runner for Azure-backed AI services"
   homepage "https://github.com/Bennekrouf/ais-runner"
-  version "0.1.1"
+  version "0.3.1"
   url "https://github.com/Bennekrouf/ais-runner/releases/download/v#{version}/ais-runner-macos-arm64.tar.gz"
-  sha256 "26d36a85628034eb3ba8516ef8c78b8d411b5e05eee0bd2910444bd650e41936"
+  sha256 "009e106cf6701ad09c0459da22fffb447e345e6ba951d20cd2feb6a5d25beb09"
 
   depends_on arch: :arm64
   depends_on "node"
